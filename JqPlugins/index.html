@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>S23 Plugin</title>
+        <link rel="StyleSheet" href="/JqPlugins/css/StyleSheet.css">
+        <link rel="JavaScript" href="/JqPlugins/js/jquery-3.7.1.min.js">
+
+        <!-- plugin stuff -->
+        <!-- https://github.com/redtettemer/rtop-video-player/blob/master/index.html -->
+        <!-- https://github.com/arielsalminen/ResponsiveSlides.js -->
+
+        <!-- video -->
+        <link rel="stylesheet" href="/JqPlugins/dist/css/rtop.videoPlayer.1.0.2.min.css" />
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+        <script type="text/javascript" src="/JqPlugins/dist/js/rtop.videoPlayer.1.0.2.min.js"></script>
+        
+        <!--images-->
+        <script src="/JqPlugins/js/responsiveslides.min.js"></script>
+
+    </head>
+    <body>
+        <h1>Introducing</h1>
+        <h1> <b>The Samsung S23</b></h1>
+
+        <!-- HTML5 VIDEO TAG -->
+    <div id="my_video">
+        <video src="/JqPlugins/images/s23ad.mp4" type="video/mp4" poster="sample.jpg" playsinline>
+        <source src="/JqPlugins/images/s23ad.mp4" type="video/mp4">
+    </video>    
+    </div>
+    
+    <h1>Now in 4 colors</h1>
+<section>
+
+        <!-- slide show tage -->
+    <ul class="rslides">
+        <li><img src="/JqPlugins/images/galaxy-s23-highlights-color-back-black.jpg" alt="black"></li>
+        <li><img src="/JqPlugins/images/galaxy-s23-highlights-color-back-cream.jpg" alt="cream"></li>
+        <li><img src="/JqPlugins/images/galaxy-s23-highlights-color-back-green.jpg" alt="green"></li>
+        <li><img src="/JqPlugins/images/galaxy-s23-highlights-color-back-lavender.jpg" alt="lavender"></li>
+      </ul>
+      <ul class="rslides">
+        <li><img src="/JqPlugins/images/galaxy-s23-highlights-color-side-black.jpg" alt="sideblack"></li>
+        <li><img src="/JqPlugins/images/galaxy-s23-highlights-color-side-cream.jpg" alt="sidecream"></li>
+        <li><img src="/JqPlugins/images/galaxy-s23-highlights-color-side-green.jpg" alt="sidegreen"></li>
+        <li><img src="/JqPlugins/images/galaxy-s23-highlights-color-side-lavender.jpg" alt="sidelavender"></li>
+      </ul>
+</section>
+    </body>
+<footer>
+    <footer>
+        <a href="/JqPlugins/index.html">Highlights</a>
+        <a href="/Project-login-main/form.html">Need Help?</a>
+        <a href="/project2grid-main/index.html">Home Page</a>
+        <a href="https://www.samsung.com/ca/smartphones/galaxy-s23/">Buy now</a>   
+    </footer>
+</footer>
+
+<!-- VIDEO CALL -->
+<!-- SLIDE SHOW CALL-->
+<script type="text/javascript">
+    
+    $(document).ready(function(){
+        var vid = $('#my_video').RTOP_VideoPlayer({
+            showFullScreen: true,
+            showTimer: true,
+            showSoundControl: true
+        });
+    });
+
+    $(function() {
+    $(".rslides").responsiveSlides();
+  });
+</script>
+</html>
+
+<!-- Michael JQpluigs -->
+
+<!-- Youtube video
+    https://www.youtube.com/watch?v=iBvfhAuSdUQ -->
+
+    
+    <!-- ALL images aswell as inspiration for the site came from 
+    samsungs offical website
+    https://www.samsung.com/ca/smartphones/galaxy-s23/     -->

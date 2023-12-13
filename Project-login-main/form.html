@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Tech Support Form</title>
+        <link rel="stylesheet" href="css/form.css">
+    </head>
+    <body>
+    <main>
+        <h1>Tech Support Form</h1>
+        <p>Need help with our products?</p>
+        <p>Enter in name and email with a appointment date</p>
+        <form id="login_form" name ="login_form" action="join.html">
+            <label for="email_address" id="email_label">Enter Email Address:</label>
+            &nbsp;
+            <input type="text" id="email_address" name="email_address"><br>
+            <label for="password" id="password_label">Select Issue:</label>
+            &nbsp;
+            <select id="service" name="service">
+                <option value="select" selected>Select Option</option>
+                <option value="repair">Hardware Issue</option>
+                <option value="softWare">SoftWare Issue</option>
+                <option value="install">Installation</option>
+                <option value="ect">Other</option>
+            </select>
+            <label for="first_name" id="first_name_label">First Name: </label>
+            &nbsp;
+            <input type="text" id="first_name" name="first_name"><br>
+            <label for="last_name" id="last_name_label">Last Name: </label>
+            &nbsp;
+            <input type="text" id="last_name" name="last_name"><br>
+            <label for="appointment_date" id="appointment_date">Date:</label>
+            &nbsp;
+            <input type="date" id="appointment_date"><br>
+            <label for="appointment_time" id="appointment_time">Time:</label>
+            &nbsp;
+            <input type="time" id="appointment_time"><br>
+            <div id="submit">
+            <input type="submit" id="submitBtn" value="Submit">
+            <input type="submit" id="clear" value="Clear">
+            </div>
+        </form>
+        <script src="js/form.js"></script>
+    </main>
+    </body>
+    <footer>Contact us    
+        <p>Email: <a href="mailto:Samsung@gmail.com">Samsung@gmail.com</a></p>
+        <p>Address: 3401 Dufferin St</p>
+        <p>Toronto, Ontario M6A 2T9, Canada</p>
+        <p>Phone:<a href="tel:+8007267864">1-800-SAMSUNG</a></p>
+    </footer>
+
+    <!-- Jamila-(CSS) Michael-(JavaScript) -->
+</html>

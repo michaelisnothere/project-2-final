@@ -1,0 +1,80 @@
+body{
+    background-color: black;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+section{
+    display: flex;
+    justify-content: center;
+}
+section > .rslides {
+    margin: 0;
+    
+}
+h1{
+    text-align: center;
+    font-size: 2em;
+}
+#my_video{
+    width: 50%;
+    margin: 0 auto;
+}
+.rslides {
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+    width: 25%;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 30px;
+    margin: 0 auto;
+}
+  
+.rslides li {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    position: absolute;
+    display: none;
+    width: 100%;
+    left: 0;
+    top: 0;
+
+}
+  
+.rslides li:first-child{
+    position: relative;
+    display: block;
+    float: left;
+}
+  
+.rslides img{
+    display: block;
+    height: auto;
+    width: 100%;
+    border: 0;
+}
+
+div{
+    padding-bottom: 30px;
+}
+footer{
+    margin: 0;
+    display: block;
+    width: 100%;
+    text-align: center;
+    border-top: 2px black solid;
+    background-color: white;  
+    
+}
+footer a{
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    padding: 10px 0;
+    border-bottom: 2px black solid;
+}
+footer a:hover{
+    color: blue;
+}

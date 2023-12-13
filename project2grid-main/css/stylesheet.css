@@ -1,0 +1,168 @@
+body{
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 100%;
+    background-color: black;
+    color: white;
+}
+p{
+    line-height: 1.6;
+    padding: 10px;
+}
+header{
+    margin: 0;
+}
+nav{
+    display: flex;
+    text-align: center;
+    width: auto;
+    justify-content: space-around;
+    padding-bottom: 2%; 
+}
+nav a:hover{
+    color: blue;
+}
+nav a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 1% 5% 1%;
+    background-color: white;
+}
+a:visited{
+    color: black;
+}
+footer{
+    margin: 0;
+    display: block;
+    width: 100%;
+    text-align: center;
+    border-top: 2px black solid;
+    background-color: white;  
+}
+footer a{
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    padding: 1%;
+    border-bottom: 2px black solid;
+}
+footer a:hover{
+    color: blue;
+}
+#threerows{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    text-align: center;
+    padding-bottom: 100px;
+}
+#threerows img{
+    margin: 0 auto;
+    display: block;
+}
+#intro{
+    grid-row: 1;
+    grid-column: 1/4;  
+    padding-bottom: 100px;
+}
+
+h2{
+    font-size: 2.5rem;
+    text-align: center;
+}
+#sec1{
+    grid-row: 2;
+
+}
+#sec2{
+    grid-row: 2;
+}
+#sec3{
+    grid-row: 2;
+}
+#tworows{
+    display: grid;
+    grid-row: auto;
+    grid-template-columns: auto auto;
+    text-align: center;
+    padding-bottom: 100px;
+}
+#sec4{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#sec5{
+    grid-column: 2;
+    grid-row: 1;
+}
+p{
+    font-size: x-large;
+}
+
+@media(max-width: 768px){
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+#threerows, #tworows{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+    box-sizing: border-box;
+    min-height: 100vh;
+}
+#threerows img, #tworows img{
+    margin: 0;
+    padding-top: 2%;
+    max-width: 100%;
+    height: auto;
+}
+header img{
+    margin: 0;
+    padding-top: 2%;
+    max-width: 100%;
+    height: auto;
+}
+nav{
+    padding: 0;
+    margin: 0%;
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: white;   
+}
+nav a{
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    padding: 1%;
+    border-bottom: 2px black solid;
+}
+}
+@media (max-width: 410px){
+body{
+    font-size: x-large;
+    }
+header img{
+    display: none;
+}
+header{
+    font-size: 300%;
+}
+nav a{
+    font-size: x-large;
+    text-align: left;
+    padding: 50px;
+}
+footer a{
+    font-size: x-large;
+    text-align: left;
+    padding: 50px;
+}
+}
